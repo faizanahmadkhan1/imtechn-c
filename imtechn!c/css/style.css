@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+.sidenav {
+	height:100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top:30px;
+	text-align:left;
+	display: block;
+	font-size: 1.2rem;
+    line-height: 1.57692em;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 26px;
+	color:black;
+	display: block;
+	transition: 0.3s;
+	font-weight: bolder;
+	box-sizing: border-box;
+  }
+    
+  .sidenav .closebtn {
+	position:left;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	
+  }
+  
+  ol li{
+	list-style-type: none;
+	
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+  /*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) 
+{ .sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}}
+ 
+@media all and (min-width: 768px) and (max-width: 1024px)
+ {.sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+ .h1 {padding-left:800px;
+	margin-left: 30px;
+	box-sizing: border-box;					}
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px)
+{.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;} }
+ 
+@media all and (max-width: 480px) 
+{ .sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}}
+ 
+/*------------------------------------------
+  Foundation Media Queries 
+   http://foundation.zurb.com/docs/media-queries.html
+--------------------------------------------*/
+ 
+/* Small screens - MOBILE */
+@media only screen { } /* Define mobile styles - Mobile First */
+ 
+@media only screen and (max-width: 40em)
+ {.sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+.h1{padding-left:40%;}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+ 
+/* Medium screens - TABLET */
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+ 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ 
+/* Large screens - DESKTOP */
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+ 
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+ 
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+ 
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+ 
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+ 
+/*------------------------------------------*/
+ 
+ 
+ 
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+/* CSS for iPhone, iPad, and Retina Displays */
+ 
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+ 
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+ 
+  
+
+h1{
+  top: 25px;
+  width: 400px;
+  left:170px;
+  text-align: center;	
+  display:inline-flex;
+  justify-content:left;
+  color: white;
+  position: fixed;
+}
+
+.sidenav .strategy:hover{
+	color: red;
+}
+.sidenav .ux:hover{
+	color: blue;
+}
+.sidenav .webdesign:hover{
+	color: green;
+}
+.sidenav .marketing:hover{
+	color: orange;
+}
+.sidenav .results:hover{
+	color: red;
+}
+.sidenav .about:hover{
+	color: red;
+}
+
+.sidenav .contact:hover{
+	color: red;
+}
+.sidenav .blog:hover{
+	color: red;
+}
+.sidenav a:active {
+	color: red;
+}
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	margin: 0;
+	font-family: Arial;
+	font-size: 17px;
+  }
+  
+  .video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%; 
+	height: 100%;
+	z-index: -1;
+  }
+  .main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 23px;
+}
+.experience {
+	color: white;
+	text-align: left;
+	font-weight: bolder;
+	font-style: normal;	
+	position: relative;
+	top: 170px;
+	left: 290px;
+	font-stretch: ultra-expanded;	
+	font-size: 0.7in;
+}
+.para {
+	color: white;
+	text-align: left;
+	font-weight: bolder;
+	font-style: normal;	
+	position: relative;
+	top: 190px;
+	left: 290px;
+	font-stretch: ultra-expanded;	
+	font-size:25px;
+}
